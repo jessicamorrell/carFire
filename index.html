@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="carFireApp">
+<head>
+	<title></title>
+</head>
+<body>
+	<div>
+		<li><a ui-sref="cars">Cars</a></li>
+        <li><a ui-sref="car({carId: 'car1'})">Geo</a></li>
+        <li><a ui-sref="car({carId: 'car2'})">Honda</a></li>
+        <!-- <li><a ui-sref="car({carId:car.$id})">{{car.year}} {{car.make}} {{car.model}}</a></li> -->
+	</div>
+	<div ui-view></div>
+
+
+<script type="text/javascript" src="https://code.angularjs.org/1.5.0/angular.min.js"></script>
+<script type-"text/javascript" src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+<script type="text/javascript" src="https://cdn.firebase.com/libs/angularfire/1.1.4/angularfire.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/carsService.js"></script>
+<script type="text/javascript" src="js/carsCtrl.js"></script>
+<script type="text/javascript" src="js/carCtrl.js"></script>
+
+</body>
+</html>
